@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 1200px;
     width: 100%;
-    background: hsl(50, 100%, 98%);
+    background: hsl(50, 60%, 98%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: grid;
