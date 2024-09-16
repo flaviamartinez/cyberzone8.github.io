@@ -178,14 +178,15 @@ footer p {
 
 /* Estilos para listas */
 ul {
-    margin: 0 0 10px 20px; /* Ajusta el margen y la sangría */
-    padding: 0;
-    line-height: 1.4; /* Aplica el mismo espaciado entre líneas */
+    margin: 0 0 3px 15px; /* Reducir el margen inferior y la sangría izquierda */
+    padding: 0; /* Elimina el padding del contenedor de la lista */
+    line-height: 1.1; /* Reduce el espaciado entre líneas */
     font-size: 14px; /* Tamaño de letra consistente */
     list-style-type: disc; /* Mantiene el punto de la lista */
     color: #333; /* Color de texto consistente */
 }
 
 ul li {
-    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+    margin-bottom: 3px; /* Reduce el espacio entre los elementos de la lista */
+    padding-left: 0; /* Elimina cualquier padding interno adicional */
 }
