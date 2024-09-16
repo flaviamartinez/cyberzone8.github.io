@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #f4f4f4;
+    line-height: 1.4; /* Espaciado más compacto */
 }
 
 .container {
@@ -19,19 +20,24 @@ body {
 }
 
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduce el espacio entre secciones */
 }
 
 h1, h2, h3 {
-    margin: 0 0 10px;
+    margin: 0 0 10px; /* Reduce el espacio debajo de los títulos */
+    line-height: 1.3; /* Espaciado entre líneas más compacto */
 }
 
 h1 {
-    font-size: 24px; /* Tamaño de letra moderado */
+    font-size: 22px; /* Tamaño moderado para el título */
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
-    color: #000000; /* Color negro para el título */
+    color: #000000;
     text-align: center;
+}
+
+h2, h3 {
+    font-size: 18px; /* Tamaño moderado para los subtítulos */
 }
 
 .column {
@@ -39,20 +45,16 @@ h1 {
 }
 
 .experience-item, .education-item, .certification-item {
-    margin-bottom: 10px;
-}
-
-.experience-item h3, .education-item h3, .certification-item h3 {
-    margin: 0;
-}
-
-.category {
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 8px; /* Espaciado compacto entre ítems */
 }
 
 .description {
-    margin: 5px 0 0;
+    margin: 4px 0; /* Espacio reducido entre descripciones */
+    line-height: 1.4; /* Compactar el texto de las descripciones */
+}
+
+p, .description {
+    font-size: 14px; /* Tamaño compacto pero legible para los párrafos */
 }
 
 .availability, .contact-info {
@@ -62,7 +64,7 @@ h1 {
 
 .icon-link i {
     margin-right: 8px;
-    color: #333; /* Color para los íconos */
+    color: #333;
 }
 
 .contact-info p {
@@ -74,12 +76,12 @@ h1 {
 
 .contact-info i {
     margin-right: 8px;
-    color: #333; /* Color para todos los íconos */
+    color: #333;
 }
 
 .section h3 i {
     margin-right: 8px;
-    color: #333; /* Color para el ícono del idioma */
+    color: #333;
 }
 
 .hidden {
@@ -99,13 +101,13 @@ h1 {
 
 header {
     text-align: center;
-    background-color: #f8f9fa; /* Color de fondo claro para el header */
+    background-color: #f8f9fa;
     padding: 10px 0;
 }
 
 header h1 {
-    color: #000000; /* Color negro para el título */
-    font-size: 24px; /* Tamaño de letra moderado */
+    color: #000000;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -125,30 +127,29 @@ nav ol li {
 }
 
 nav ol li a {
-    color: #007bff; /* Color del enlace */
+    color: #007bff;
     text-decoration: none;
-    font-size: 16px; /* Tamaño de letra moderado para los enlaces */
+    font-size: 16px;
 }
 
 nav ol li a:hover {
-    text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+    text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    background-color: #f8f9fa; /* Color de fondo similar al del header para mantener la consistencia */
+    background-color: #f8f9fa;
     padding: 10px 0;
-    margin-top: 20px; /* Espacio arriba del footer para separarlo del contenido */
-    border-top: 1px solid #dee2e6; /* Línea sutil arriba del footer */
+    margin-top: 20px;
+    border-top: 1px solid #dee2e6;
 }
 
 footer p {
-    color: #6c757d; /* Color gris claro para el texto */
-    font-size: 14px; /* Tamaño de fuente moderado */
+    color: #6c757d;
+    font-size: 14px;
     margin: 0;
 }
 
-/* Estilo para los botones de filtro */
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -157,44 +158,34 @@ footer p {
 }
 
 .filter-buttons button {
-    background-color: #007bff; /* Color de fondo del botón */
+    background-color: #007bff;
     border: none;
-    color: white; /* Color del texto del botón */
-    padding: 10px 20px;
+    color: white;
+    padding: 8px 16px; /* Reduce el padding de los botones */
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px; /* Tamaño más compacto para el texto de los botones */
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    line-height: 1.3;
 }
 
 .filter-buttons button:hover {
-    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+    background-color: #0056b3;
 }
 
-/* Estilo para las categorías */
-.categories {
-    margin-bottom: 20px;
+/* Estilos para listas */
+ul {
+    margin: 0 0 10px 20px; /* Ajusta el margen y la sangría */
+    padding: 0;
+    line-height: 1.4; /* Aplica el mismo espaciado entre líneas */
+    font-size: 14px; /* Tamaño de letra consistente */
+    list-style-type: disc; /* Mantiene el punto de la lista */
+    color: #333; /* Color de texto consistente */
 }
 
-.categories label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.categories .category-item {
-    margin-bottom: 5px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.categories .category-item:hover {
-    background-color: #f0f0f0; /* Color de fondo de las categorías al pasar el ratón */
+ul li {
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
 }
