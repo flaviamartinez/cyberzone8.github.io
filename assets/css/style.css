@@ -6,6 +6,7 @@ body {
     justify-content: center;
     background-color: #f4f4f4;
 }
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -16,66 +17,184 @@ body {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
 }
+
 .section {
     margin-bottom: 20px;
 }
+
 h1, h2, h3 {
     margin: 0 0 10px;
 }
+
 h1 {
-    font-size: 30px;
+    font-size: 24px; /* Tamaño de letra moderado */
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
+    color: #000000; /* Color negro para el título */
+    text-align: center;
 }
+
 .column {
     padding: 10px;
 }
+
 .experience-item, .education-item, .certification-item {
     margin-bottom: 10px;
 }
+
 .experience-item h3, .education-item h3, .certification-item h3 {
     margin: 0;
 }
+
 .category {
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .description {
     margin: 5px 0 0;
 }
+
 .availability, .contact-info {
     font-weight: normal;
     margin-bottom: 5px;
 }
+
 .icon-link i {
     margin-right: 8px;
-    color: #333; /* Color for LinkedIn icon */
+    color: #333; /* Color para los íconos */
 }
+
 .contact-info p {
     margin: 10px 0;
     display: flex;
     align-items: center;
     color: #333;
 }
+
 .contact-info i {
     margin-right: 8px;
-    color: #333; /* Color for all icons */
+    color: #333; /* Color para todos los íconos */
 }
+
 .section h3 i {
     margin-right: 8px;
-    color: #333; /* Color for the language icon */
+    color: #333; /* Color para el ícono del idioma */
 }
+
 .hidden {
     display: none;
 }
+
 .show {
     display: block;
 }
 
-
-.imagen_circular{
+.imagen_circular {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+header {
+    text-align: center;
+    background-color: #f8f9fa; /* Color de fondo claro para el header */
+    padding: 10px 0;
+}
+
+header h1 {
+    color: #000000; /* Color negro para el título */
+    font-size: 24px; /* Tamaño de letra moderado */
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ol li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ol li a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de letra moderado para los enlaces */
+}
+
+nav ol li a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f9fa; /* Color de fondo similar al del header para mantener la consistencia */
+    padding: 10px 0;
+    margin-top: 20px; /* Espacio arriba del footer para separarlo del contenido */
+    border-top: 1px solid #dee2e6; /* Línea sutil arriba del footer */
+}
+
+footer p {
+    color: #6c757d; /* Color gris claro para el texto */
+    font-size: 14px; /* Tamaño de fuente moderado */
+    margin: 0;
+}
+
+/* Estilo para los botones de filtro */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none;
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Estilo para las categorías */
+.categories {
+    margin-bottom: 20px;
+}
+
+.categories label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.categories .category-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.categories .category-item:hover {
+    background-color: #f0f0f0; /* Color de fondo de las categorías al pasar el ratón */
 }
