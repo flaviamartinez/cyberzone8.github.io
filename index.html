@@ -12,7 +12,7 @@
     <div class="container">
 
         <!-- Column 1 -->
-        <div class="column">
+        <div div class="column column-1">
 
             <header>
                 <h1>CV</h1>
@@ -211,10 +211,12 @@
                     </div>
                 </div>
             </div>
+            <button id="print-btn" onclick="printCV()">Imprimir CV</button>
+
         </div>
         
         <!-- Column 2 -->
-        <div class="column">
+        <div class="column column-2">
             <!-- Professional Summary -->
             <div class="section">
                 <h2> 
@@ -513,14 +515,20 @@
 
                 </div>
             </div>
-
         </div>
+        
             <!-- Footer -->
     <footer>
         <p>&copy; 2024 Cyberzone8. Todos los derechos reservados.</p>
     </footer>
 
     </div>
+    
+    <script>
+        function printCV() {
+            window.print();
+        }
+    </script>
 
     <script>
         function filterCategory(category) {

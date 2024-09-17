@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #f4f4f4;
-    line-height: 1.4; /* Espaciado más compacto */
+    line-height: 1.4;
 }
 
 .container {
@@ -15,21 +15,21 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; /* Primera columna 1/3 y segunda 2/3 */
     gap: 20px;
 }
 
 .section {
-    margin-bottom: 15px; /* Reduce el espacio entre secciones */
+    margin-bottom: 15px;
 }
 
 h1, h2, h3 {
-    margin: 0 0 10px; /* Reduce el espacio debajo de los títulos */
-    line-height: 1.3; /* Espaciado entre líneas más compacto */
+    margin: 0 0 10px;
+    line-height: 1.3;
 }
 
 h1 {
-    font-size: 22px; /* Tamaño moderado para el título */
+    font-size: 22px;
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     color: #000000;
@@ -37,24 +37,34 @@ h1 {
 }
 
 h2, h3 {
-    font-size: 18px; /* Tamaño moderado para los subtítulos */
+    font-size: 18px;
 }
 
 .column {
     padding: 10px;
 }
 
+.column-1 {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.column-2 {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
 .experience-item, .education-item, .certification-item {
-    margin-bottom: 8px; /* Espaciado compacto entre ítems */
+    margin-bottom: 8px;
 }
 
 .description {
-    margin: 4px 0; /* Espacio reducido entre descripciones */
-    line-height: 1.4; /* Compactar el texto de las descripciones */
+    margin: 4px 0;
+    line-height: 1.4;
 }
 
 p, .description {
-    font-size: 14px; /* Tamaño compacto pero legible para los párrafos */
+    font-size: 14px;
 }
 
 .availability, .contact-info {
@@ -93,8 +103,8 @@ p, .description {
 }
 
 .imagen_circular {
-    width: 300px;
-    height: 300px;
+    width: 66.66%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -161,10 +171,10 @@ footer p {
     background-color: #007bff;
     border: none;
     color: white;
-    padding: 8px 16px; /* Reduce el padding de los botones */
+    padding: 8px 16px;
     text-align: center;
     display: inline-block;
-    font-size: 14px; /* Tamaño más compacto para el texto de los botones */
+    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -176,17 +186,55 @@ footer p {
     background-color: #0056b3;
 }
 
-/* Estilos para listas */
 ul {
-    margin: 0 0 3px 15px; /* Reducir el margen inferior y la sangría izquierda */
-    padding: 0; /* Elimina el padding del contenedor de la lista */
-    line-height: 1.1; /* Reduce el espaciado entre líneas */
-    font-size: 14px; /* Tamaño de letra consistente */
-    list-style-type: disc; /* Mantiene el punto de la lista */
-    color: #333; /* Color de texto consistente */
+    margin: 0 0 3px 15px;
+    padding: 0;
+    line-height: 1.1;
+    font-size: 14px;
+    list-style-type: disc;
+    color: #333;
 }
 
 ul li {
-    margin-bottom: 3px; /* Reduce el espacio entre los elementos de la lista */
-    padding-left: 0; /* Elimina cualquier padding interno adicional */
+    margin-bottom: 3px;
+    padding-left: 0;
+}
+
+/* Ajustes para impresión */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 10px; /* Reducir aún más el tamaño de fuente para caber en una página */
+        background-color: #ffffff;
+        transform: scale(0.9); /* Escala el contenido para que quepa en una sola página */
+        transform-origin: top left; /* Fija el punto de origen de la escala */
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Mantén las columnas para la impresión */
+        gap: 10px;
+        box-shadow: none; /* Elimina el sombreado para la impresión */
+    }
+
+    .column {
+        padding: 0;
+    }
+
+    .imagen_circular {
+        width: 80px; /* Ajustar el tamaño de la imagen para la impresión */
+        height: 80px;
+    }
+
+    header, footer, .filter-buttons, nav {
+        display: none; /* Oculta elementos no esenciales para la impresión */
+    }
+
+    @page {
+        size: letter;
+        margin: 10mm; /* Reducir márgenes para ajustarse mejor a la página */
+    }
 }
